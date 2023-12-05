@@ -7,19 +7,28 @@
 </head>
 <body>
     <div class="personal-info">
-        <div class="personal-photo">
-            <img src="personal-photo.jpg" >
+        <div class="personal-content">
+            <div class="personal-content-left">
+                <div class="personal-photo">
+                    <img src="personal-photo.jpg" >
+                </div>
+                <p>黃亭瑄</p>
+                <p>HUANG TING HSUAN</p>
+            </div>
         </div>
     </div>
 </body>
 </html>
 <style>
+    @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
     body{
+        font-family: 'Noto Sans TC',sans-serif;
         margin: 0;
     }
     .personal-info{
         background-color: #DEE9E3;
         height: 300px;
+        padding-top: 30px;
     }
     .personal-photo{
         width: 100px;
@@ -32,5 +41,15 @@
         margin-left: -25%;
         margin-top: -30%;
     }
-
+    .personal-content{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .personal-content-left{
+        text-align: center;
+        width: 200px;
+    }
+    .personal-content-left p{
+        margin-left: -100px;
+    }
 </style>
