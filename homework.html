@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework</title>
+    <style>
+        .colored-container { /*container容器*/
+            width: 1200px;
+            height: 320px;
+            background-color: #ffcccc;
+            margin: 0%;
+            position: relative; /* 设置相对定位，为了确保图片位置相对于容器 */
+            border: none; /* 消除边框 */
+        }
+        .round-image { /*圖片要是圓的*/
+            border-radius: 50%; /* 将边框半径设置为50%，使其呈现圆形 */
+            width: 180px; /* 设置图片宽度 */
+            height: 180px; /* 设置图片高度 */
+            position: absolute; /* 设置绝对定位，相对于容器进行定位 */
+            top: 30px; /* 设置图片距离容器顶部的距离 */
+            left: 15%; /* 设置图片距离容器左侧的距离为容器宽度的一半 */
+            
+        }
+        .image-caption { /*表圖像標題*/
+            position: absolute;
+            top: 215px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 17%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+            font-weight:bold /* 字体粗體 */
+            
+        }
+        .image-caption2 { /*表圖像標題*/
+            position: absolute;
+            top: 270px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 9.5%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 30px; /* 设置文本的字体大小 */
+            font-weight:bold /* 字体粗體 */
+            
+        }
+        .image-caption3 { /*表圖像標題*/
+            position: absolute;
+            top: 56px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 54%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 35px; /* 设置文本的字体大小 */
+            font-weight:bold /* 字体粗體 */
+            
+        }
+        .round-image2 { /*圖片要是圓的*/
+            border-radius: 50%; /* 将边框半径设置为50%，使其呈现圆形 */
+            width: 18px; /* 设置图片宽度 */
+            height: 18px; /* 设置图片高度 */
+            position: absolute; /* 设置绝对定位，相对于容器进行定位 */
+            top: 100px; /* 设置图片距离容器顶部的距离 */
+            left: 53%; /* 设置图片距离容器左侧的距离为容器宽度的一半 */
+            width: 60px;
+            height: 60px;
+        }
+        .image-caption4 { /*表圖像標題*/
+            position: absolute;
+            top: 126px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 58%;
+            margin-top: 0px;/* 设置文本与图片之间的间距 */
+            font-size: 26px; /* 设置文本的字体大小 */
+            
+        }
+        .round-image3 { /*圖片要是圓的*/
+            border-radius: 50%; /* 将边框半径设置为50%，使其呈现圆形 */
+            width: 18px; /* 设置图片宽度 */
+            height: 18px; /* 设置图片高度 */
+            position: absolute; /* 设置绝对定位，相对于容器进行定位 */
+            top: 170px; /* 设置图片距离容器顶部的距离 */
+            left: 52.5%; /* 设置图片距离容器左侧的距离为容器宽度的一半 */
+            width: 60px;
+            height: 60px;
+        }
+        .image-caption5 { /*表圖像標題*/
+            position: absolute;
+            top: 190px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 58%;
+            margin-top: 0px;/* 设置文本与图片之间的间距 */
+            font-size: 26px; /* 设置文本的字体大小 */
+            
+        }
+        .round-image4 { /*圖片要是圓的*/
+            border-radius: 50%; /* 将边框半径设置为50%，使其呈现圆形 */
+            width: 18px; /* 设置图片宽度 */
+            height: 18px; /* 设置图片高度 */
+            position: absolute; /* 设置绝对定位，相对于容器进行定位 */
+            top: 250px; /* 设置图片距离容器顶部的距离 */
+            left: 53%; /* 设置图片距离容器左侧的距离为容器宽度的一半 */
+            width: 60px;
+            height: 60px;
+        }
+        .image-caption6 { /*表圖像標題*/
+            position: absolute;
+            top: 265px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 58%;
+            margin-top: 0px;/* 设置文本与图片之间的间距 */
+            font-size: 26px; /* 设置文本的字体大小 */
+            
+        }
+        .image-caption7 { /*表圖像標題*/
+            position: absolute;
+            top: 350px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 3.6%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+            font-weight:bold; /* 字体粗體*/
+            color: #ff6666;
+        }
+        .image-caption8 { /*表圖像標題*/
+            position: absolute;
+            top: 410px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 11%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+            hite-space: normal;
+        }
+        .image-caption9 { /*表圖像標題*/
+            position: absolute;
+            top: 750px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 3.6%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+            font-weight:bold; /* 字体粗體*/
+            color: #ff6666;
+        }
+        .relative-element { 
+            position: absolute; 
+            top: 860px; /* 设置图片距离容器顶部的距离 */
+            left: 4%; /* 设置图片距离容器左侧的距离为容器宽度的一半 */
+            width: 25px;
+        }
+        .image-caption10 { /*表圖像標題*/
+            position: absolute;
+            top: 850px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 11%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+            font-weight:bold; /* 字体粗體*/
+            color: #ff6666;
+        }
+        .image-caption11 { /*表圖像標題*/
+            position: absolute;
+            top: 915px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 11%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+        }
+        .image-caption12 { /*表圖像標題*/
+            position: absolute;
+            top: 980px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 11%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+            hite-space: normal;
+        }
+        .image-caption13 { /*表圖像標題*/
+            position: absolute;
+            top: 1150px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 11%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+            white-space: pre-wrap;
+        }
+        .image-caption14 { /*表圖像標題*/
+            position: absolute;
+            top: 1400px; /* 调整标题的垂直位置，根据需要进行调整 */
+            left: 11%;
+            margin-top: 0px; /* 设置文本与图片之间的间距 */
+            font-size: 40px; /* 设置文本的字体大小 */
+            font-weight:bold; /* 字体粗體*/
+            color: #ff6666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="colored-container">
+    <figure>
+        <img class="round-image" src="3.jpg" >
+        <figcaption class="image-caption">黃亭瑄</figcaption>
+        <figcaption class="image-caption2">HUANG TING HSUAN</figcaption>
+        <figcaption class="image-caption3">基本資訊 </figcaption>
+        <img class="round-image2" src="4.png" >
+        <figcaption class="image-caption4">生日:2000/04/21 </figcaption>
+        <img class="round-image3" src="5.png" >
+        <figcaption class="image-caption5">手機:0975-216-470 </figcaption>
+        <img class="round-image4" src="6.png" >
+        <figcaption class="image-caption6">Gmail:koyuki20000421@gmail.com</figcaption>
+        <figcaption class="image-caption7">簡歷 Summary </figcaption>
+        <figcaption class="image-caption8">
+            【自我PR】
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+        </figcaption>
+        <figcaption class="image-caption9">經歷 Experience </figcaption>
+        <img class="relative-element" src="7.png" >
+        <figcaption class="image-caption10">副執行長 </figcaption>
+        <figcaption class="image-caption11">abcdefghijkabcdefghijkabcdefghijk</figcaption>
+        <figcaption class="image-caption12">你好你好你好你好你好你好你好你好你好你好你好，
+            你好你好你好你好你好你好你好你好你好你好你好，你好你好你好你好你好你好你好你好你好你好你好!
+        </figcaption>
+        <figcaption class="image-caption13">The programming environment of the Python language was chosen.it is easier to design applications,
+●it is a high-level language.
+●more malleable and more easily accessible. 
+●understood by human nature. 
+        </figcaption>
+        <figcaption class="image-caption14">教學助理 </figcaption>
+    </figure>
+
+    </div>
+    
+</body>
+</html>
