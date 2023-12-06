@@ -15,6 +15,12 @@
                 <p>黃亭瑄</p>
                 <p>HUANG TING HSUAN</p>
             </div>
+            <div class="personal-content-right">
+                <b>基本資訊</b>
+                <p>生日:2000/04/21</p>
+                <p>手機:0975-216-470</p>
+                <p>Gmail:koyuki20000421@gmail.com</p>
+            </div>
         </div>
     </div>
 </body>
@@ -24,10 +30,14 @@
     body{
         font-family: 'Noto Sans TC',sans-serif;
         margin: 0;
+        color: #4e4e4e;
+    }
+    p{
+        margin: 4px;
     }
     .personal-info{
         background-color: #DEE9E3;
-        height: 300px;
+        height: 200px;
         padding-top: 30px;
     }
     .personal-photo{
@@ -44,12 +54,15 @@
     .personal-content{
         width: 70%;
         margin: 0 auto;
+        display: flex;
     }
-    .personal-content-left{
+    .personal-content-left {
         text-align: center;
-        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
     }
     .personal-content-left p{
-        margin-left: -100px;
+        font-weight: bold;
     }
 </style>
