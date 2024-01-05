@@ -10,6 +10,7 @@
         font-family: 'Noto Sans TC',sans-serif;
         margin: 0;
         color: #4e4e4e;
+        counter-reset: myCounter;
     }
     p{
         margin: 4px;
@@ -77,7 +78,7 @@
         width: 450px; /* 設定圖片寬度佔據整個 company-photo 寬度 */
         margin: 0 0 0 50px;
     }
-    .company{
+    .small-title{
         color: #67776f;
         font-size: 14px;
         padding-left:5px ;
@@ -86,52 +87,23 @@
     ul{
         padding-left: 20px;
     }
-    .v-line3{
-        display: flex;
-    }
-    .v-line3::before{
-        content: "1";
-        width: 25px;
-        height: 25px;
-        background-color: #67776f;
-        position: absolute;
-        border-radius:50% ;
-        transform:translate(8px,0px);
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white; /* 數字的文字顏色 */
-        font-weight: bold; /* 加粗文字 */
-    }
     .education-info{
-        margin:10px 0 0 60px;
-        display:inline-block;
-        flex-direction: column;/* 將 education-content 內容以垂直方向排列 */
+        display: flex;
+        flex-wrap: wrap;
     }
-    .ncu-content1{
-        flex: 1;/* 佔據剩餘空間，使其在左邊 */
-        width: 250px;
-        height: auto;
+    .school-info{
+        display: flex;
+        width: 43%;
     }
-    .ncu-content2 img{
-        height: 60px;
-        width: 240px;
-        flex-shrink: 0; /* 不縮小，使其在右邊 */
-        margin: 10px 0 0 20px;
-    }
-    .v-line4{
-        display: inline-flex;
-        order: 2;
-    }
-    .v-line4::before{
-        content: "2";
+    .school-info::before{
+        counter-increment: myCounter;/*遞增*/
+        content: counter(myCounter);
         width: 25px;
         height: 25px;
         background-color: #67776f;
         position: absolute;
         border-radius:50% ;
-        transform:translate(-40px,-1px);
+        transform:translate(8px,0px);/*(x,y)*/
         margin-top: 10px;
         display: flex;
         justify-content: center;
@@ -139,121 +111,18 @@
         color: white; /* 數字的文字顏色 */
         font-weight: bold; /* 加粗文字 */
     }
-    .education-info2{
+    .education-content{
         margin:10px 0 0 60px;
-        display:inline-block;
-        flex-direction: column;/* 將 education-content 內容以垂直方向排列 */
-        transform:translate(-50px,-2px);
     }
-    .ncut-content1{
-        flex: 1;/* 佔據剩餘空間，使其在左邊 */
-        width: 250px;
-        height: auto;
-    }
-    .ncut-content2{
-        height: 50px;
-        width: 200px;
-        flex-shrink: 0; /* 不縮小，使其在右邊 */
-        margin: 10px 0 0 20px;
-        transform: translate(-55px,-30px);
-    }
-    .ncut-content2 img{
-        height: 80px;
-        width: 80px;
-        flex-shrink: 0; /* 不縮小，使其在右邊 */
+    .education-img img{
+        width: 60px;
         margin: 10px 0 0 20px;
     }
     .flex-container{
         display: flex;
     }
-    .v-line3,.v-line4{
-        flex: 1; /* 平均佔據寬度 */
-        margin-right: 10px; /* 調整兩個元素之間的間距 */
-    }   
-    .v-line5::before{
-        content: "3";
-        width: 25px;
-        height: 25px;
-        background-color: #67776f;
-        position: absolute;
-        border-radius:50% ;
-        transform:translate(8px,20px);
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white; /* 數字的文字顏色 */
-        font-weight: bold; /* 加粗文字 */
-    }
-    .v-line5{
-        display: flex;
-    }
-    .education-info3{
-        margin:0 0 0 60px;
-        display:inline-block;
-        flex-direction: column;/* 將 education-content 內容以垂直方向排列 */
-    }
-    .fukuoka-content1{
-        flex: 1;/* 佔據剩餘空間，使其在左邊 */
-        width: 252px;
-        height: auto;
-        margin-top: 30px;
-    }
-    .fukuoka-content2 img{
-        height: 60px;
-        width: 60px;
-        flex-shrink: 0; /* 不縮小，使其在右邊 */
-        margin: 20px 0 0 20px;
-    }
-    .v-line6{
-        display: inline-flex;
-        order: 2;
-    }
-    .v-line6::before{
-        content: "4";
-        width: 25px;
-        height: 25px;
-        background-color: #67776f;
-        position: absolute;
-        border-radius:50% ;
-        transform:translate(80px,20px);
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white; /* 數字的文字顏色 */
-        font-weight: bold; /* 加粗文字 */
-    }
-    .education-info4{
-        margin:10px 0 0 60px;
-        display:inline-block;
-        flex-direction: column;/* 將 education-content 內容以垂直方向排列 */
-        transform:translate(70px,18px);
-    }
-    .szmc-content1{
-        flex: 1;/* 佔據剩餘空間，使其在左邊 */
-        width: 250px;
-        height: auto;
-    }
-    .szmc-content2{
-        height: 50px;
-        width: 200px;
-        flex-shrink: 0; /* 不縮小，使其在右邊 */
-        margin: 10px 0 0 20px;
-        transform: translate(65px,-13px);
-    }
-    .szmc-content2 img{
-        height: 80px;
-        width: 80px;
-        flex-shrink: 0; /* 不縮小，使其在右邊 */
-        margin: 10px 0 0 20px;
-    }
     .flex-container2{
         display: flex;
-    }
-    .v-line5,.v-line6{
-        flex: 1; /* 平均佔據寬度 */
-        margin-right: 70px; /* 調整兩個元素之間的間距 */
     }
     .skill-info{
         border:3px solid #67776f;
