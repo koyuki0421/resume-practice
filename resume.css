@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('/fonts/noto-sans-tc/noto-sans-tc-v35-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
     body{
         font-family: 'Noto Sans TC',sans-serif;
         margin: 0;
@@ -48,14 +48,14 @@
         width: 80%;
         margin: 0 auto;
     }
-    .v-line{
+    .line-node{
         border-left:3px solid #67776f;
         padding-left: 10px;
         display: flex;
         justify-content: space-between;/*水平方向上平均分布*/
         margin-left: 20px;
     }
-    .v-line::before{/*偽元素*/
+    .line-node::before{/*偽元素*/
         content: "";
         width: 10px;
         height: 10px;
