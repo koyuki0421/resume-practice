@@ -1,0 +1,445 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+    body{
+        font-family: 'Noto Sans TC',sans-serif;
+        margin: 0;
+        color: #4e4e4e;
+    }
+    p{
+        margin: 4px;
+    }
+    h3{
+        color: #67776f;
+        margin: 20px 0 5px;/*上 左右 下*/
+    }
+    .personal-info{
+        background-color: #DEE9E3;
+        height: 200px;
+        padding-top: 30px;
+    }
+    .personal-photo{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;/*表圓形*/
+        overflow: hidden;   /*當內容超出了元素框時，將其隱藏並不顯示*/ 
+    }
+    .personal-photo img{
+        width: 170%;
+        margin-left: -25%;
+        margin-top: -30%;
+    }
+    .personal-content{
+        width: 70%;
+        margin: 0 auto;/*置中*/
+        display: flex;
+    }
+    .personal-content-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;         
+    }
+    .about-me-info{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .v-line{
+        border-left:3px solid #67776f;
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;/*水平方向上平均分布*/
+        margin-left: 20px;
+    }
+    .v-line::before{/*偽元素*/
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #67776f;
+        position: absolute;
+        border-radius:50% ;/*半徑50*/
+        transform:translate(-16px,0);/*x軸,y軸的移動；-表向左*/
+    }
+    .yusco-info{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;/* 將 yusco-content 內容以垂直方向排列 */
+        height: 100%;/* 使用百分比設定高度，以撐開與 yusco-content 同樣的高度 */
+        word-wrap: break-word; /* 強制換行，即使單詞沒有空格 */
+        overflow-wrap: break-word; /* 支援中文等字型，確保字元中間也能換行 */
+    }
+    .yusco-content{
+        width: 500px;
+        height: 100%;
+        order:2;
+        display: flex;
+        flex-direction: column;  
+    }
+    .yusco-content img{
+        width: 450px; /* 設定圖片寬度佔據整個 yusco-content 寬度 */
+        height: auto;    
+        margin: 0 0 0 50px;
+    }
+    .v-line2{
+        border-left:3px solid #67776f;
+        padding-left: 10px;
+        margin-top:10px ;
+        margin-left:20px ;
+        display: flex;
+        justify-content: space-between;
+    }
+    .v-line2::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #67776f;
+        position: absolute;
+        border-radius:50% ;
+        transform:translate(-16px,0px);
+    }
+    .pasona-info{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;/* 將 pasona-content 內容以垂直方向排列 */
+        height: 100%;/* 使用百分比設定高度，以撐開與 pasona-content 同樣的高度 */
+        word-wrap: break-word; /* 強制換行，即使單詞沒有空格 */
+        overflow-wrap: break-word; /* 支援中文等字型，確保字元中間也能換行 */
+    }
+    .pasona-content{
+        width: 500px;
+        height: 100%;
+        order:2; /*2表右邊*/
+        display: flex;
+        flex-direction: column;  
+    }
+    .pasona-content img{
+        width: 450px; 
+        height: auto;    
+        margin:0 0 0 50px;
+    }
+    .company{
+        color: #67776f;
+        font-size: 14px;
+        padding-left:5px ;
+        margin: 5px 0 8px;/*上 左右 下*/
+    }
+    ul{
+        padding-left: 20px;
+    }
+    .v-line3{
+        display: flex;
+    }
+    .v-line3::before{
+        content: "1";
+        width: 25px;
+        height: 25px;
+        background-color: #67776f;
+        position: absolute;
+        border-radius:50% ;
+        transform:translate(8px,0px);
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* 數字的文字顏色 */
+        font-weight: bold; /* 加粗文字 */
+    }
+    .education-info{
+        margin:10px 0 0 60px;
+        display:inline-block;
+        flex-direction: column;/* 將 education-content 內容以垂直方向排列 */
+    }
+    .ncu-content1{
+        flex: 1;/* 佔據剩餘空間，使其在左邊 */
+        width: 250px;
+        height: auto;
+    }
+    .ncu-content2 img{
+        height: 60px;
+        width: 240px;
+        flex-shrink: 0; /* 不縮小，使其在右邊 */
+        margin: 10px 0 0 20px;
+    }
+    .v-line4{
+        display: inline-flex;
+        order: 2;
+    }
+    .v-line4::before{
+        content: "2";
+        width: 25px;
+        height: 25px;
+        background-color: #67776f;
+        position: absolute;
+        border-radius:50% ;
+        transform:translate(-40px,-1px);
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* 數字的文字顏色 */
+        font-weight: bold; /* 加粗文字 */
+    }
+    .education-info2{
+        margin:10px 0 0 60px;
+        display:inline-block;
+        flex-direction: column;/* 將 education-content 內容以垂直方向排列 */
+        transform:translate(-50px,-2px);
+    }
+    .ncut-content1{
+        flex: 1;/* 佔據剩餘空間，使其在左邊 */
+        width: 250px;
+        height: auto;
+    }
+    .ncut-content2{
+        height: 50px;
+        width: 200px;
+        flex-shrink: 0; /* 不縮小，使其在右邊 */
+        margin: 10px 0 0 20px;
+        transform: translate(-55px,-30px);
+    }
+    .ncut-content2 img{
+        height: 80px;
+        width: 80px;
+        flex-shrink: 0; /* 不縮小，使其在右邊 */
+        margin: 10px 0 0 20px;
+    }
+    .flex-container{
+        display: flex;
+    }
+    .v-line3,.v-line4{
+        flex: 1; /* 平均佔據寬度 */
+        margin-right: 10px; /* 調整兩個元素之間的間距 */
+    }   
+    .v-line5::before{
+        content: "3";
+        width: 25px;
+        height: 25px;
+        background-color: #67776f;
+        position: absolute;
+        border-radius:50% ;
+        transform:translate(8px,20px);
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* 數字的文字顏色 */
+        font-weight: bold; /* 加粗文字 */
+    }
+    .v-line5{
+        display: flex;
+    }
+    .education-info3{
+        margin:0 0 0 60px;
+        display:inline-block;
+        flex-direction: column;/* 將 education-content 內容以垂直方向排列 */
+    }
+    .fukuoka-content1{
+        flex: 1;/* 佔據剩餘空間，使其在左邊 */
+        width: 252px;
+        height: auto;
+        margin-top: 30px;
+    }
+    .fukuoka-content2 img{
+        height: 60px;
+        width: 60px;
+        flex-shrink: 0; /* 不縮小，使其在右邊 */
+        margin: 20px 0 0 20px;
+    }
+    .v-line6{
+        display: inline-flex;
+        order: 2;
+    }
+    .v-line6::before{
+        content: "4";
+        width: 25px;
+        height: 25px;
+        background-color: #67776f;
+        position: absolute;
+        border-radius:50% ;
+        transform:translate(80px,20px);
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* 數字的文字顏色 */
+        font-weight: bold; /* 加粗文字 */
+    }
+    .education-info4{
+        margin:10px 0 0 60px;
+        display:inline-block;
+        flex-direction: column;/* 將 education-content 內容以垂直方向排列 */
+        transform:translate(70px,18px);
+    }
+    .szmc-content1{
+        flex: 1;/* 佔據剩餘空間，使其在左邊 */
+        width: 250px;
+        height: auto;
+    }
+    .szmc-content2{
+        height: 50px;
+        width: 200px;
+        flex-shrink: 0; /* 不縮小，使其在右邊 */
+        margin: 10px 0 0 20px;
+        transform: translate(65px,-13px);
+    }
+    .szmc-content2 img{
+        height: 80px;
+        width: 80px;
+        flex-shrink: 0; /* 不縮小，使其在右邊 */
+        margin: 10px 0 0 20px;
+    }
+    .flex-container2{
+        display: flex;
+    }
+    .v-line5,.v-line6{
+        flex: 1; /* 平均佔據寬度 */
+        margin-right: 70px; /* 調整兩個元素之間的間距 */
+    }
+    .skill-info{
+        border:3px solid #67776f;
+        display: flex;
+        margin-left: 20px;
+        width: 200px;
+        line-height:30px /* 設定適當的行高 */;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-line{
+        display: flex;
+        flex-direction: column; /* 垂直方向排列子元素 */
+        margin-left: 20px;
+        width: 200px;
+        justify-content: flex-start;
+        align-items: center;
+    }  
+    .s-line p {
+        margin: 10px 0 0 0; /* 调整段落之间的底部间距 */
+    }
+    .skill-info1{
+        border:3px solid #67776f;
+        display: flex;
+        margin-left: 20px;
+        width: 200px;
+        line-height:30px /* 設定適當的行高 */;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-line1{
+        display: flex;
+        flex-direction: column; /* 垂直方向排列子元素 */
+        margin-left: 20px;
+        width: 200px;
+        justify-content: flex-start;
+        align-items: center;
+    }  
+    .s-line1 p {
+        margin: 10px 0 0 0; /* 调整段落之间的底部间距 */
+    }
+    .flex-container3 {
+        display: flex;
+        flex-direction: row; /* 水平方向排列子元素 */
+        justify-content: space-between; /* 在容器内平均分布子元素，可以根据需要调整 */
+    }
+    .skill-info, .skill-info1 {
+        flex: 1; /* 子元素平均占据可用空间 */
+        margin: 0 10px; /* 可选：增加子元素之间的间距 */
+    }
+    .flex-container4 {
+        display: flex;
+        flex-direction: row; /* 水平方向排列子元素 */
+        justify-content: space-between; /* 在容器内平均分布子元素，可以根据需要调整 */
+    }
+
+    .s-line, .s-line1,.s-line2 {
+        flex: 1; /* 子元素平均占据可用空间 */
+        margin: 0 10px; /* 可选：增加子元素之间的间距 */
+    }
+    .s-line2{
+        display: flex;
+        flex-direction: column; /* 垂直方向排列子元素 */
+        margin-left:20px;
+        width: 200px;
+        justify-content: flex-start;
+        align-items: center;
+    }  
+    .s-line2 p {
+        margin: 10px 0 0 0; /* 调整段落之间的底部间距 */
+    }
+    .flex-container5 {
+        display: flex;
+        flex-direction: row; /* 水平方向排列子元素 */
+        justify-content: space-between; /* 在容器内平均分布子元素，可以根据需要调整 */
+    }
+    .competitions-info{
+        border:3px solid #67776f;
+        display: flex;
+        width: 100%;
+        line-height:30px /* 設定適當的行高 */;
+        display: flex;
+        justify-content: center;
+        margin-right:10px ;
+    }
+    .company-5g{
+        color: #67776f;
+        font-size: 14px;
+        position: absolute;
+        margin: 10px 10px 20px 810px;
+    }
+    .company-5g1{
+        color: #67776f;
+        font-size: 14px;
+        position: absolute;
+        margin: 10px 10px ;
+    }
+    .c-line{
+        margin-top:10px ;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .c-info{
+        display: flex;
+        flex-direction: column;/* 將 c-content 內容以垂直方向排列 */
+        height: 100%;/* 使用百分比設定高度，以撐開與 c-content 同樣的高度 */
+    }
+    .c-content{
+        width: 500px;
+        height: 300px;
+        order:2; /*2表右邊*/
+        display: flex;
+        flex-direction: column;  
+        margin: 10px 0 0;
+    }
+    .c-content img{
+        width: 300px;
+        height: 150px;
+        margin:0 11px 5px 0;
+        border: 2px solid #67776f; /* 2px寬的黑色實線邊框 */
+    }
+    .flex-container6 {
+        display: flex;
+        flex-direction: row; /* 水平方向排列子元素 */
+        justify-content: space-between; /* 在容器内平均分布子元素，可以根据需要调整 */
+    }
+    .flex-container7 {
+        display: flex;
+        flex-direction: row; /* 水平方向排列子元素 */
+        justify-content: space-between; /* 在容器内平均分布子元素，可以根据需要调整 */
+    }
+    .c-content1{
+        width: 500px;
+        height: 250px;
+        order:2; /*2表右邊*/
+        display: flex;
+        flex-direction: column;  
+        margin: 10px 0 0;
+    }
+    .c-content1 img{
+        width: 300px;
+        height: 350px;
+        margin:0 11px 5px 0;
+        border: 2px solid #67776f; /* 2px寬的黑色實線邊框 */
+    }
+    .others{
+        color: #67776f;
+        font-size: 14px;
+    }
