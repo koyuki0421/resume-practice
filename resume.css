@@ -77,25 +77,6 @@
         width: 450px; /* 設定圖片寬度佔據整個 company-photo 寬度 */
         margin: 0 0 0 50px;
     }
-    .company-info{
-        margin-left: 30px;
-        display: flex;
-        flex-direction: column;/* 將 company-photo 內容以垂直方向排列 */
-        height: 100%;/* 使用百分比設定高度，以撐開與 company-photo 同樣的高度 */
-        word-wrap: break-word; /* 強制換行，即使單詞沒有空格 */
-        overflow-wrap: break-word; /* 支援中文等字型，確保字元中間也能換行 */
-    }
-    .company-photo{
-        width: 500px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;  
-    }
-    .company-photo img{
-        width: 450px; 
-        height: auto;    
-        margin:0 0 0 50px;
-    }
     .company{
         color: #67776f;
         font-size: 14px;
