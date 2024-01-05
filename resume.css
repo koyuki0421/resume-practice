@@ -118,19 +118,12 @@
         width: 60px;
         margin: 10px 0 0 20px;
     }
-    .flex-container{
-        display: flex;
-    }
-    .flex-container2{
-        display: flex;
-    }
     .skill-info{
         border:3px solid #67776f;
         display: flex;
         margin-left: 20px;
         width: 200px;
         line-height:30px /* 設定適當的行高 */;
-        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -145,58 +138,11 @@
     .s-line p {
         margin: 10px 0 0 0; /* 调整段落之间的底部间距 */
     }
-    .skill-info1{
-        border:3px solid #67776f;
-        display: flex;
-        margin-left: 20px;
-        width: 200px;
-        line-height:30px /* 設定適當的行高 */;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .s-line1{
-        display: flex;
-        flex-direction: column; /* 垂直方向排列子元素 */
-        margin-left: 20px;
-        width: 200px;
-        justify-content: flex-start;
-        align-items: center;
-    }  
-    .s-line1 p {
-        margin: 10px 0 0 0; /* 调整段落之间的底部间距 */
-    }
-    .flex-container3 {
-        display: flex;
-        flex-direction: row; /* 水平方向排列子元素 */
-        justify-content: space-between; /* 在容器内平均分布子元素，可以根据需要调整 */
-    }
-    .skill-info, .skill-info1 {
+    .average-space{
         flex: 1; /* 子元素平均占据可用空间 */
         margin: 0 10px; /* 可选：增加子元素之间的间距 */
     }
-    .flex-container4 {
-        display: flex;
-        flex-direction: row; /* 水平方向排列子元素 */
-        justify-content: space-between; /* 在容器内平均分布子元素，可以根据需要调整 */
-    }
-
-    .s-line, .s-line1,.s-line2 {
-        flex: 1; /* 子元素平均占据可用空间 */
-        margin: 0 10px; /* 可选：增加子元素之间的间距 */
-    }
-    .s-line2{
-        display: flex;
-        flex-direction: column; /* 垂直方向排列子元素 */
-        margin-left:20px;
-        width: 200px;
-        justify-content: flex-start;
-        align-items: center;
-    }  
-    .s-line2 p {
-        margin: 10px 0 0 0; /* 调整段落之间的底部间距 */
-    }
-    .flex-container5 {
+    .flex-row-space-between {
         display: flex;
         flex-direction: row; /* 水平方向排列子元素 */
         justify-content: space-between; /* 在容器内平均分布子元素，可以根据需要调整 */
@@ -210,17 +156,10 @@
         justify-content: center;
         margin-right:10px ;
     }
-    .company-5g{
+    .title-info{
         color: #67776f;
         font-size: 14px;
         position: absolute;
-        margin: 10px 10px 20px 810px;
-    }
-    .company-5g1{
-        color: #67776f;
-        font-size: 14px;
-        position: absolute;
-        margin: 10px 10px ;
     }
     .c-line{
         margin-top:10px ;
